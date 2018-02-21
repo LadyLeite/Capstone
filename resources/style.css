@@ -1,0 +1,90 @@
+/* Universal styles */
+.html{
+  font-size: 16px;
+}
+
+.body{
+  background-color: lightgrey;
+}
+
+nav ul{
+  display: flex;
+  list-style-type: none;
+}
+
+a{
+text-decoration: none;
+color: black;
+}
+
+header, footer{
+  height: 4rem;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul li, footer ul li{
+  padding-left: 1rem;
+}
+
+/* Main container */
+.container{
+  width: 840px;
+  margin: 0px auto 0px auto;
+  height: 100%;
+  border: 2px solid red;
+}
+
+/* Header */
+header{
+  padding: 1.5rem;
+}
+
+.logo{
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo img{
+  height: 2rem;
+}
+
+.logo span{
+  font-size: 2rem;
+  font-weight: 100;
+  font-family: roboto;
+  color:
+}
+
+
+
+
+/* Main banner */
+.mainBanner{
+  height: 31.5rem;
+  background-color: grey;
+}
+/* Keep Practicing banner */
+.practiceBanner{
+  height: 37.5rem;
+  background-color: azure;
+}
+/* Start learning banner*/
+.learningBanner{
+  height: 51rem;
+  background-color: lightgrey;
+}
+/* Thesis exhibit banner */
+.thesisBanner{
+  height: 43.5rem;
+  background-color: white;
+}
+/* Footer */
+  footer{
+    height: 5rem;
+    padding: 1rem 1rem 0 1.5rem;
+    font-size: 13px;
+  }
+/* Media Queries */
