@@ -1,15 +1,44 @@
 /* Universal styles */
-.html{
-  font-size: 16px;
+
+html, body {
+    margin : 0;
+    padding : 0;
+    font-size: 16px;
+    background-color: pink;
 }
 
-.body{
-  background-color: lightgrey;
+h1 {
+  font-family: roboto, sans-serif, arial;
+  font-weight: bold;
+  font-size: 2.2rem;
+  line-height: 1.3;
 }
 
-nav ul{
-  display: flex;
-  list-style-type: none;
+h2{
+  font-family: roboto, sans-serif, arial;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+h4{
+  font-family: roboto, sans-serif, arial;
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.3;
+}
+
+h5{
+  font-family: roboto, sans-serif, arial;
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
+
+
+p{
+  font-size: 1rem;
+  line-height: 1.2;
 }
 
 a{
@@ -17,29 +46,37 @@ text-decoration: none;
 color: black;
 }
 
-header, footer{
-  height: 4rem;
-  background-color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header ul li, footer ul li{
-  padding-left: 1rem;
+i{
+  padding: 0.5rem;
 }
 
 /* Main container */
 .container{
-  width: 840px;
-  margin: 0px auto 0px auto;
+  width: 1200px;
   height: 100%;
-  border: 2px solid red;
+  margin: 0px auto 0px auto;
 }
 
-/* Header */
+/* Header & Footer*/
+  header, footer{
+  height: 4rem;
+  background-color: white;
+}
+
 header{
+  width: 96%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 1.5rem;
+}
+
+header nav ul, footer nav ul{
+  display: inline-flex;
+}
+
+header nav ul li, footer nav ul li{
+  padding-left: 1.5rem;
 }
 
 .logo{
@@ -54,37 +91,423 @@ header{
 .logo span{
   font-size: 2rem;
   font-weight: 100;
-  font-family: roboto;
-  color:
+  font-family: roboto, sans-serif, arial;
 }
 
+footer{
+ width: 96.4%;
+ height: 5rem;
+ padding: 1rem 1rem 0 1.5rem;
+ font-size: 0.8rem;
+ border: 2px solid fuchsia;
+}
 
+footer .terms{
+  display: flex;
+  justify-content: space-between;
+}
 
-
+footer .social{
+  display: flex;
+  justify-content: center;
+  padding-top: 0.5rem;
+}
 /* Main banner */
 .mainBanner{
-  height: 31.5rem;
+  height: 30rem;
   background-color: grey;
+  display: flex;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
+
+.mainBanner img{
+  width: 56%;
+  height: auto;
+  padding:0rem  1.5rem 0rem 1.5rem;
+}
+
+.mainText{
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  width: 25%;
+}
+
+.mainText h1{
+  padding-top: 15%;
+}
+
+.mainText h4{
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+
+.mainText span{
+  padding: 0.5rem 0;
+  background-color: fuchsia;
+  font-weight: bold;
+  color: white;
+}
+
 /* Keep Practicing banner */
-.practiceBanner{
+.storyBanner{
+  display: flex;
   height: 37.5rem;
   background-color: azure;
+  padding-top: 2rem 0rem 2rem 1.5rem;
 }
+
+.storyBanner article{
+  width: 60%;
+  padding: 0rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.storyBanner article img{
+  height: 20rem;
+  padding-top: 2rem;
+}
+
+.storyBanner article h2{
+  padding: 2rem 0 1.5rem 0;
+}
+
+.storyBanner article sub{
+  font-size: 0.8rem;
+  padding-top: 2rem;
+}
+
+.upcomingEvents{
+  width: 40%;
+  padding: 2rem 1rem;
+  height: auto;
+}
+
+.event{
+  display: flex;
+  height: 10rem;
+}
+
+.eventImage {
+  width: 35%;
+  padding: 0rem 1rem 1rem 1rem;
+}
+
+.eventInfo {
+  width: 65%;
+}
+
+.eventInfo p{
+  padding: 0.5rem 0;
+}
+
+.eventInfo p a{
+  text-decoration: none;
+  color: blue;
+}
+
+
 /* Start learning banner*/
 .learningBanner{
   height: 51rem;
   background-color: lightgrey;
+  padding: 2rem;
 }
-/* Thesis exhibit banner */
-.thesisBanner{
-  height: 43.5rem;
+
+ .qualifications{
+  padding: 2rem 2.5rem;
+  display: grid;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  grid-template-columns: 20.6rem 20.6rem 20.6rem;
+  justify-content: center;
+  align-content: center;
+  border: 2px solid pink;
+}
+
+.courses{
+  height: 20rem;
+  width: 100%;
   background-color: white;
 }
-/* Footer */
-  footer{
-    height: 5rem;
-    padding: 1rem 1rem 0 1.5rem;
-    font-size: 13px;
-  }
+
+.courseInfo{
+  width: 100%;
+  height: 50%;
+  margin: 0px;
+  background-color: white;
+
+}
+
+.courseInfo h5{
+  padding: 1rem 1rem .5rem 1rem;
+}
+
+.courseInfo p{
+  padding: 0rem 1rem .5rem 1rem;
+}
+
+.courseImage{
+  width:100%;
+  height: 50%;
+  margin: 0px;
+}
+
+/* Thesis exhibit banner */
+#thesisHeading{
+  text-align: center;
+}
+
+#thesis{
+  height: 50rem;
+  border: 2px solid gray;
+}
+
+.storyBanner article video{
+  height: 20rem;
+  padding-top: 2rem;
+  border: 2px solid red;
+}
+
 /* Media Queries */
+/* Laptop */
+@media only screen and (max-width:1600px)
+{
+  .container{
+    width: 960px;
+  }
+
+  header{
+    width: 95%;
+  }
+
+  footer{
+    width: 95.5%;
+  }
+
+  body{
+    background-color: green;
+  }
+
+  .mainBanner img{
+    width: 60%;
+ }
+  .qualifications{
+   grid-template-columns: 15.6rem 15.6rem 15.6rem;
+ }
+
+ .courses{
+   height: 17rem;
+ }
+
+ .learningBanner{
+   height: 45rem;
+}
+
+#thesis{
+  height: 40rem;
+}
+
+/* Tablet landscape: */
+@media only screen and (max-width:1024px)
+{
+  .container{
+    width: 770px;
+  }
+
+  header{
+    width: 94%;
+  }
+
+  footer{
+    width: 94.3%;
+  }
+
+  body{
+    background-color: yellow;
+  }
+
+  .mainBanner{
+    height: 20rem;
+  }
+
+  .mainBanner img{
+    width: 60%;
+    height: auto;
+ }
+
+ .mainText h1{
+   padding-top: 0rem;
+   font-size: 1.5rem;
+ }
+
+ .mainText h4{
+   padding-top: 10%;
+   padding-bottom: 10%;
+ }
+
+ .eventImage{
+   height: 7rem;
+ }
+
+  .qualifications{
+   grid-template-columns: 11.7rem 11.7rem 11.7rem;
+ }
+
+ .courses{
+   height: 16rem;
+ }
+
+ .courseInfo h5{
+   font-size: 1rem;
+ }
+
+ .courseInfo p{
+   font-size: 0.8rem;
+ }
+
+ .learningBanner{
+   height: 40rem;
+}
+
+#thesis{
+  height: 30rem;
+}
+
+.storyBanner article video{
+  height: 15rem;
+  padding-top: 2rem;
+  border: 2px solid red;
+}
+
+}
+
+/* Tablet portrait : */
+@media only screen and (max-width:768px)
+{
+  .container{
+    width: 100%;
+  }
+
+  header ul li{
+    display: none;
+  }
+
+  /* insert display menu */
+/*
+  .mainBanner{
+    height: 15rem;
+  }
+
+
+
+ .mainBanner h1{
+  text-align: center;
+}
+
+ .mainBanner span{
+   margin-top: 1rem;
+ }
+
+
+
+  .eventImage{
+   height: 7rem;
+  }
+
+  .qualifications{
+   grid-template-columns: 11.7rem 11.7rem 11.7rem;
+  }
+
+  .courses{
+   height: 16rem;
+  }
+
+  .courseInfo h5{
+   font-size: 1rem;
+  }
+
+  .courseInfo p{
+   font-size: 0.8rem;
+  }
+
+  .learningBanner{
+   height: 40rem;
+  }
+
+  #thesis{
+  height: 30rem;
+  }
+
+  .storyBanner article video{
+  height: 15rem;
+  padding-top: 2rem;
+  border: 2px solid red;
+  }
+}
+*/
+/* Mobile */
+@media only screen and (max-width: 480px)
+{
+
+  .container{
+    width: 100%;
+  }
+  header{
+    height: 64px;
+  }
+
+  header .logo{
+    display: none;
+  }
+
+  .mainBanner{
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mainBanner img{
+    width: 100%;
+  }
+
+  .mainText{
+    width: auto;
+  }
+
+.storyBanner{
+  height: auto;
+}
+
+.storyBanner article{
+    display: none;
+  }
+
+.upcomingEvents{
+  width: 100%;
+}
+
+  .upcomingEvents .event{
+    flex-direction: column;
+    height: auto;
+  }
+
+  .event img{
+    width: auto;
+    height: auto;
+  }
+
+  .qualifications{
+    display: none;
+  }
+
+  #thesis{
+    height: auto;
+    display: none;
+  }
+
+  /* insert thesis video */
+
+}
