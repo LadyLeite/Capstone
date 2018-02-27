@@ -6,6 +6,7 @@
             <link href="./resources/reset.css" type="text/css" rel="stylesheet" />
             <link href="./resources/style.css" type="text/css" rel="stylesheet" />
             <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Barlow|Russo+One" rel="stylesheet">
             <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
           </head>
 
@@ -18,6 +19,7 @@
                       <img src="./resources/images/ic-logo.svg" alt="lion logo" />
                       <span><strong>COLMAR</strong>ACADEMY</span>
                     </div> <!-- logo div -->
+                    <span id="tabletMenu">MENU</span>
                     <nav>
                       <ul>
                         <li><a href=#>On campus</a></li>
@@ -26,6 +28,12 @@
                         <li><a href=#>Sign in</a></li>
                       </ul>
                     </nav>
+                    <div class="mobileIcons">
+                      <img src="./resources/images/ic-logo.svg" alt="lion logo" />
+                      <img src="./resources/images/ic-on-campus.svg" alt="campus logo" />
+                      <img src="./resources/images/ic-online.svg" alt="screen logo" />
+                      <img src="./resources/images/ic-login.svg" alt="login logo" />
+                    </div> <!-- mobile icons div -->
                   </header>
 
         <!-- Main Banner -->
@@ -77,62 +85,84 @@
         <!-- "Start learning" banner -->
               <div class="learningBanner">
                 <h2>Start learning</h2>
+                <div class="mobileQualificationList">
+                  <ul>
+                    <li><a href="#">Software engineering</a></li>
+                    <li><a href="#">Computer art</a></li>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Data</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Marketing</a></li>
+                  </ul>
+                </div> <!-- mobile qualifications list -->
                 <div class="qualifications">
                     <div class="courses">
                       <img src="./resources/images/course-software.jpg" alt="computer" class="courseImage" />
                       <div class="courseInfo">
+                        <a href="#">
                         <h5>Software engineering</h5>
                         <p>COURSES</p>
                         <p>Web development, Mobile Development, iOT, APIs</p>
+                      </a>
                       </div> <!-- course info div -->
                     </div> <!-- courses div -->
                     <div class="courses">
                       <img src="./resources/images/course-computer-art.jpg" alt="computer" class="courseImage" />
                       <div class="courseInfo">
+                        <a href="#">
                         <h5>Computer art</h5>
                         <p>COURSES</p>
                         <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+                      </a>
                       </div> <!-- course info div -->
                       </div> <!-- courses div -->
                       <div class="courses">
                       <img src="./resources/images/course-design.jpg" alt="computer" class="courseImage"/>
                         <div class="courseInfo">
+                          <a href="#">
                           <h5>Design</h5>
                           <p>COURSES</p>
                           <p>User Experience Design, User Research, Visual Design</p>
+                        </a>
                         </div> <!-- course info div -->
                         </div> <!-- courses div -->
                         <div class="courses">
                           <img src="./resources/images/course-data.jpg" alt="computer" class="courseImage" />
                           <div class="courseInfo">
+                            <a href="#">
                             <h5>Data</h5>
                             <p>COURSES</p>
                             <p>Data Science, Big Data, SQL, Data Visualization</p>
+                          </a>
                           </div> <!-- course info div -->
                           </div> <!-- courses div -->
                           <div class="courses">
                             <img src="./resources/images/course-business.jpg" alt="computer"  class="courseImage"/>
                             <div class="courseInfo">
+                              <a href="#">
                               <h5>Business</h5>
                               <p>COURSES</p>
                               <p>Product Development, Business Develoopment, Startup</p>
+                            </a>
                             </div> <!-- course info div -->
                             </div> <!-- courses div -->
                             <div class="courses">
                               <img src="./resources/images/course-marketing.jpg" alt="computer" class="courseImage" />
                               <div class="courseInfo">
+                                <a href="#">
                                 <h5>Marketing</h5>
                                 <p>COURSES</p>
                                 <p>Analytics, Content Marketing, Mobile Marketing</p>
+                              </a>
                               </div> <!-- course info div -->
                              </div> <!-- courses div -->
                 </div> <!-- qualifications div -->
               </div> <!-- learning banner div -->
         <!-- "Thesis exhibit" banner -->
-                <h2 id="thesisHeading">Thesis exhibit</h2>
+                <h2 id="thesisHeading">Thesis exhibits</h2>
                 <div class="storyBanner" id="thesis">
                   <article>
-                    <video height="20rem" controls mute>
+                    <video id="video" height="20rem" controls mute>
                       <source src="./resources/videos/thesis.mp4">Your browser does not support the video tag.</video>
                     <h2>Reimagine urban</h2>
                     <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat. Sed nonaccumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>

@@ -4,34 +4,34 @@ html, body {
     margin : 0;
     padding : 0;
     font-size: 16px;
-    background-color: pink;
+    background-color: #bdddea;
 }
 
 h1 {
-  font-family: roboto, sans-serif, arial;
+  font-family: 'Russo+One', 'Roboto', Tahoma;
   font-weight: bold;
-  font-size: 2.2rem;
+  font-size: 3rem;
   line-height: 1.3;
 }
 
 h2{
-  font-family: roboto, sans-serif, arial;
+  font-family: 'Russo+One', 'Roboto', Tahoma;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   line-height: 1.3;
 }
 
 h4{
-  font-family: roboto, sans-serif, arial;
+  font-family: 'roboto', sans-serif, arial;
   font-weight: 600;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   line-height: 1.3;
 }
 
 h5{
-  font-family: roboto, sans-serif, arial;
+  font-family: 'roboto', Times, arial;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.2;
 }
 
@@ -71,8 +71,28 @@ header{
   padding: 1.5rem;
 }
 
+header #tabletMenu{
+  display: none;
+}
+
+header .mobileIcons{
+  display: none;
+}
+
 header nav ul, footer nav ul{
+  font-family: 'Barlow', 'roboto', arial;
   display: inline-flex;
+}
+
+header nav ul li:hover{
+  font-weight: bold;
+  transform: rotate(15deg);
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+
+header nav ul li:visited{
+  color:#16aa9f;
 }
 
 header nav ul li, footer nav ul li{
@@ -95,11 +115,10 @@ header nav ul li, footer nav ul li{
 }
 
 footer{
- width: 96.4%;
+ width: 96.7%;
  height: 5rem;
  padding: 1rem 1rem 0 1.5rem;
  font-size: 0.8rem;
- border: 2px solid fuchsia;
 }
 
 footer .terms{
@@ -107,15 +126,53 @@ footer .terms{
   justify-content: space-between;
 }
 
+footer ul li:hover{
+  transform: rotate(15deg);
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+
 footer .social{
   display: flex;
   justify-content: center;
   padding-top: 0.5rem;
 }
+/* Social media icons styling */
+ .fa-facebook:hover{
+  color: #3b5998;
+  text-shadow: 0 0 15px #3b5998;
+  transition: all 0.5s ease;
+}
+
+.fa-twitter:hover{
+  color: #00aced;
+  text-shadow: 0 0 15px #00aced;
+  transition: all 0.5s ease;
+}
+
+.fa-pinterest:hover{
+  color: #dd4b39;
+  text-shadow: 0 0 15px #dd4b39;
+  transition: all 0.5s ease;
+}
+
+.fa-instagram:hover{
+  color: #bc2a8d;
+  text-shadow: 0 0 15px #bc2a8d;
+  transition: all 0.5s ease;
+}
+
+.fa-linkedin:hover{
+  color: #3b5998;
+  text-shadow: 0 0 15px #3b5998;
+  transition: all 0.5s ease;
+}
+
+
 /* Main banner */
 .mainBanner{
   height: 30rem;
-  background-color: grey;
+  background-color: hsl(59.1, 83.3%, 83.5%);
   display: flex;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -131,35 +188,45 @@ footer .social{
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
-  width: 25%;
+  width: 40%;
+  color: #3e2f19;
 }
 
 .mainText h1{
-  padding-top: 15%;
+  padding-top: 10%;
 }
 
 .mainText h4{
-  padding-top: 15%;
-  padding-bottom: 15%;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 .mainText span{
   padding: 0.5rem 0;
-  background-color: fuchsia;
+  background-color: #3e2f19;
   font-weight: bold;
   color: white;
+  border-radius: 25px;
+}
+
+.mainText span:active{
+  color: #3e2f19;
+  background-color: white;
+  letter-spacing: 0.1rem;
+
 }
 
 /* Keep Practicing banner */
 .storyBanner{
   display: flex;
-  height: 37.5rem;
-  background-color: azure;
+  height: auto;
+  background-color: #e1efed;
   padding-top: 2rem 0rem 2rem 1.5rem;
+  color: #4e596b;
 }
 
 .storyBanner article{
-  width: 60%;
+  width: 56%;
   padding: 0rem 1.5rem;
   display: flex;
   flex-direction: column;
@@ -177,6 +244,13 @@ footer .social{
 .storyBanner article sub{
   font-size: 0.8rem;
   padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.storyBanner:hover{
+  color: black;
+  transition-duration: 1s;
+  transition-timing-function: linear;
 }
 
 .upcomingEvents{
@@ -212,10 +286,18 @@ footer .social{
 /* Start learning banner*/
 .learningBanner{
   height: 51rem;
-  background-color: lightgrey;
+  background-color: #c6c6a8;
   padding: 2rem;
+  color: #171008b3;
 }
 
+.learningBanner .mobileQualificationList{
+  display: none;
+}
+
+.learningBanner h2{
+  text-align: center;
+}
  .qualifications{
   padding: 2rem 2.5rem;
   display: grid;
@@ -224,7 +306,6 @@ footer .social{
   grid-template-columns: 20.6rem 20.6rem 20.6rem;
   justify-content: center;
   align-content: center;
-  border: 2px solid pink;
 }
 
 .courses{
@@ -238,7 +319,18 @@ footer .social{
   height: 50%;
   margin: 0px;
   background-color: white;
+}
 
+.courseInfo a{
+  color: #171008b3;
+}
+
+.courseInfo a:hover{
+  color: black;
+}
+
+.courseInfo a:visited{
+  color: #704981b3;
 }
 
 .courseInfo h5{
@@ -257,18 +349,24 @@ footer .social{
 
 /* Thesis exhibit banner */
 #thesisHeading{
+  padding-top: 2rem;
   text-align: center;
+  background-color: #e1efed;
+  color: #4e596b;
 }
 
 #thesis{
-  height: 50rem;
-  border: 2px solid gray;
+  height: auto;
+  padding-bottom: 2rem;
+}
+
+#thesis h2, #thesis p, #thesis .upcomingEvents{
+  color: #4e596b;
 }
 
 .storyBanner article video{
   height: 20rem;
   padding-top: 2rem;
-  border: 2px solid red;
 }
 
 /* Media Queries */
@@ -287,19 +385,32 @@ footer .social{
     width: 95.5%;
   }
 
-  body{
-    background-color: green;
+  .mainBanner{
+    padding-right: 1.5rem;
   }
 
   .mainBanner img{
-    width: 60%;
+    width: 55.9%;
  }
+
+ .mainText h1{
+   padding-top: 15%;
+   font-size: 2.6rem;
+ }
+
   .qualifications{
    grid-template-columns: 15.6rem 15.6rem 15.6rem;
  }
 
  .courses{
    height: 17rem;
+ }
+ .courseInfo h5{
+   padding: .5rem .5rem .5rem .8rem;
+ }
+
+ .courseInfo p{
+   padding: 0rem 1rem .5rem 1rem;
  }
 
  .learningBanner{
@@ -318,15 +429,36 @@ footer .social{
   }
 
   header{
-    width: 94%;
+    width: 93.8%;
+  }
+
+  header nav{
+    display: none;
+  }
+
+  header #tabletMenu{
+    display: block;
+    padding-right: 4rem;
+    font-family: 'Roboto', 'Barlow', Tahoma;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-decoration-line: underline;
+    text-align: center;
+    padding: 1rem;
+    margin-right: 2rem;
+  }
+
+  header #tabletMenu:hover{
+    background-color: #e1efed;
+    color: #4e596b;
+    text-align: right;
+    border-radius: 25px;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
   }
 
   footer{
-    width: 94.3%;
-  }
-
-  body{
-    background-color: yellow;
+    width: 94.8%;
   }
 
   .mainBanner{
@@ -339,14 +471,23 @@ footer .social{
  }
 
  .mainText h1{
-   padding-top: 0rem;
-   font-size: 1.5rem;
+   padding-top: 0.8rem;
+   font-size: 1.75rem;
  }
 
  .mainText h4{
    padding-top: 10%;
    padding-bottom: 10%;
+   font-size: 1.25rem;
  }
+
+.practicingBanner h2, .learningBanner h2, #thesis h2, #thesisHeading{
+  font-size: 1.65rem;
+}
+
+.practicingBanner h5{
+  font-size: 1.1rem;
+}
 
  .eventImage{
    height: 7rem;
@@ -379,7 +520,6 @@ footer .social{
 .storyBanner article video{
   height: 15rem;
   padding-top: 2rem;
-  border: 2px solid red;
 }
 
 }
@@ -395,75 +535,122 @@ footer .social{
     display: none;
   }
 
-  /* insert display menu */
-/*
   .mainBanner{
-    height: 15rem;
+    height: auto;
+    flex-direction: column;
   }
 
+  .mainBanner h4{
+    padding: 2rem;
+  }
 
+  .mainBanner span{
+    width: 10rem;
+    align-self: center;
+  }
 
- .mainBanner h1{
-  text-align: center;
-}
+  .mainBanner img{
+    width: auto;
+    height: 20rem;
+  }
 
- .mainBanner span{
-   margin-top: 1rem;
- }
+  .mainText{
+    width: auto;
+    text-align: center;
+  }
 
+  .storyBanner{
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+  }
 
+  .storyBanner article{
+    width: auto;
+  }
+
+  .upcomingEvents{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    flex-wrap: wrap;
+  }
+
+  .event{
+    display: flex;
+    width: 15rem;
+    height: 15rem;
+  }
 
   .eventImage{
    height: 7rem;
   }
 
-  .qualifications{
-   grid-template-columns: 11.7rem 11.7rem 11.7rem;
+  .learningBanner{
+   height: auto;
   }
 
-  .courses{
-   height: 16rem;
+  .qualifications{
+   grid-template-columns: 13rem 13rem;
+  }
+
+  .courseImage{
+    height: 70%;
+  }
+
+  .courseInfo{
+    height: 20%;
   }
 
   .courseInfo h5{
    font-size: 1rem;
+   text-align: center;
   }
 
   .courseInfo p{
-   font-size: 0.8rem;
-  }
-
-  .learningBanner{
-   height: 40rem;
+   display: none;
   }
 
   #thesis{
-  height: 30rem;
+  height: auto;
   }
 
   .storyBanner article video{
   height: 15rem;
   padding-top: 2rem;
-  border: 2px solid red;
   }
 }
-*/
+
 /* Mobile */
 @media only screen and (max-width: 480px)
 {
-
   .container{
     width: 100%;
+    height: 100%;
   }
-  header{
-    height: 64px;
+
+  .container header{
+    width: 100%;
+    height: 4rem;
+  }
+
+  header #tabletMenu{
+    display: none;
+  }
+
+  header .mobileIcons{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
   }
 
   header .logo{
     display: none;
   }
 
-  .mainBanner{
+.container  .mainBanner{
+    padding-top: 0px;
+    width: 100%;
     height: auto;
     flex-direction: column;
     align-items: center;
@@ -477,8 +664,9 @@ footer .social{
     width: auto;
   }
 
-.storyBanner{
+.practicingBanner{
   height: auto;
+  width: 100%;
 }
 
 .storyBanner article{
@@ -491,22 +679,71 @@ footer .social{
 
   .upcomingEvents .event{
     flex-direction: column;
-    height: auto;
+    width: 100%;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
   }
 
   .event img{
-    width: auto;
-    height: auto;
+    width: 70%;
+    height: 68%;
   }
 
   .qualifications{
     display: none;
   }
 
+  .learningBanner{
+    height: 100%;
+  }
+
+  .learningBanner h2{
+    padding-bottom: 1rem;
+  }
+
+  .learningBanner .mobileQualificationList{
+    display: inline;
+    color: #171008b3;
+    background-color: white;
+  }
+
+  .mobileQualificationList ul li{
+    margin: 0.5rem;
+    background-color: lightgrey;
+    padding: 1rem 0 1.5rem 1rem;
+    font-size: 1rem;
+    font-family: 'roboto', Helvetica, Arial;
+    letter-spacing: 0.2rem;
+  }
+
+  .mobileQualificationList ul li:hover{
+    font-weight: bold;
+    background-color: white;
+    transition: color 0.8s linear 0s;
+  }
+
+  #thesis article{
+      display: block;
+    }
+
   #thesis{
     height: auto;
+  }
+
+  #thesisHeading{
+    padding-bottom: 1rem;
+  }
+
+  .upcomingEvents, #thesis h2, #thesis p{
     display: none;
   }
+
+  footer nav{
+    display: none;
+  }
+
+
 
   /* insert thesis video */
 
